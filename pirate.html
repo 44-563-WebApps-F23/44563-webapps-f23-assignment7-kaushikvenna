@@ -58,6 +58,7 @@
   <div id="penalty" style="background-color: chocolate;">Penalty is zero.</div>
   <p id="forHelp" onclick="help()">Click for help.</p>
   <div id="help" style="background-color:rgb(8, 233, 38);">Help report</div>
+  <button onclick="newGame()">new game</button>
   <div class="GameField">
     <div class="row">
         <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic1" onclick="check(0)" style="width: 110px; height: 60px;"></div>
@@ -108,7 +109,20 @@ const ids = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7",
     let treasureLocation=5
     let trapLocation=18
     let gameOver=false
-    
+    function newGame() {
+        treasureLocation= Math.floor((Math.random() * 24) + 1)
+        checkCount=0
+        penalty=0
+        trapLocation=Math.floor((Math.random() * 24) + 1)
+        if(treasureLocation==trapLocation){
+            trapLocation=Math.floor((Math.random() * 24) + 1)
+        }
+        for (let index = 0; index < 25; index++) {
+            let pictures=document.getElementById(ids[index])
+            pictures.src="treasuremap.jpg"
+        }
+        }
+
     function check(position) {
         if(gameOver){
 
