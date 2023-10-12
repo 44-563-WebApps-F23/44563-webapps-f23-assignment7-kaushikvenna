@@ -54,56 +54,109 @@
     <header><h1>Find the treasure by Kaushik Ram Koteshwar Venna</h1></header>
 
   <p>Click on the locations to search for treasure, beware the traps</p>
-  <p class="locations" style="background-color: darkorchid;">Number of locations checked is zero.</p>
-  <div class="penalty" style="background-color: chocolate;">Penalty is zero.</div>
-  <p>Click for help.</p>
-  <div class="help" style="background-color:rgb(8, 233, 38);">Help report</div>
-
+  <p id="locations" style="background-color: darkorchid;">Number of locations checked is zero.</p>
+  <div id="penalty" style="background-color: chocolate;">Penalty is zero.</div>
+  <p id="forHelp" onclick="help()">Click for help.</p>
+  <div id="help" style="background-color:rgb(8, 233, 38);">Help report</div>
   <div class="GameField">
     <div class="row">
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic1" onclick="check(0)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic2" onclick="check(1)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic3" onclick="check(2)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic4" onclick="check(3)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic5" onclick="check(4)" style="width: 110px; height: 60px;"></div>
     </div>
     <div class="row">
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic6" onclick="check(5)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic7" onclick="check(6)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic8" onclick="check(7)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic9" onclick="check(8)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic10" onclick="check(9)" style="width: 110px; height: 60px;"></div>
     </div>
     <div class="row">
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic11" onclick="check(10)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic12" onclick="check(11)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic13" onclick="check(12)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic14" onclick="check(13)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic15" onclick="check(14)" style="width: 110px; height: 60px;"></div>
     </div>
     <div class="row">
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic16" onclick="check(15)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic17" onclick="check(16)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic18" onclick="check(17)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic19" onclick="check(18)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic20" onclick="check(19)" style="width: 110px; height: 60px;"></div>
     </div>
     <div class="row">
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
-        <div class="search_location"><img src="treasuremap.jpg" alt="map" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic21" onclick="check(20)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic22" onclick="check(21)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic23" onclick="check(22)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic24" onclick="check(23)" style="width: 110px; height: 60px;"></div>
+        <div class="search_location"><img src="treasuremap.jpg" alt="map"  id="pic25" onclick="check(24)" style="width: 110px; height: 60px;"></div>
     </div>
+
 </div>
   
     
-
-
-  
+<script>
+const ids = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7",
+    "pic8", "pic9", "pic10", "pic11", "pic12", "pic13", "pic14", "pic15", "pic16",
+    "pic17", "pic18", "pic19", "pic20", "pic21", "pic22", "pic23", "pic24","pic25"]
+    let checkCount=0
+    let penalty=0
+    let lastCheck=0
+    let treasureLocation=5
+    let trapLocation=18
+    let gameOver=false
     
-  
+    function check(position) {
+        if(gameOver){
 
+        }
+        else{
+            image = document.getElementById(ids[position])
+        if(position==treasureLocation){
+            image.src="treasure.png"
+            gameOver=true
+            penalty=penalty-3
+        }
+        else if(position==trapLocation){
+            image.src = "trap.jpeg"
+            gameOver=true
+            penalty=penalty+4
+        }
+        else{
+            console.log("any image")
+            image.src = "hatbones.jpg" 
+        }
+        checkCount+=1
+        penalty+=1
+        document.getElementById("locations").innerHTML = "Count of locations checked is : "+checkCount
+        document.getElementById("penalty").innerHTML = "Penalty: "+penalty
+        lastCheck=penalty
+        } 
+    }
 
+    function help() {
+        lastch_row=parseInt(lastCheck/5)
+        lastCh_column=parseInt(lastCheck%5)
+        console.log(lastch_row+"  "+lastCh_column)
+        treasure_row = parseInt(treasureLocation/5)
+        treasure_column = parseInt(treasureLocation%5)
+        console.log(treasure_row+"  "+treasure_column)
+        if(((lastCh_column-treasure_column))==1){
+            document.getElementById("help").innerHTML ="Can smell it"
+        }
+        else if(((lastch_row-treasure_row)+(lastCh_column-treasure_column)+2)==2){
+            document.getElementById("help").innerHTML = "Close Matie"
+        }
+        else{
+            document.getElementById("help").innerHTML = "Step Faster"
+        }
+        penalty+=2
+        document.getElementById("penalty").innerHTML = "Updated the penalty: "+penalty
+    }
+    
+</script>
 </body>
 </html>
